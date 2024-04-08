@@ -10,9 +10,12 @@ channels = [
     ("/home/rishi/archival/pengiscool", "@flypenguins1119", "peng"),
     ("/home/rishi/archival/josie", "@theprocedural", "theprocedural"),
     ("/home/rishi/archival/miscyt", "@StamperTV_Archive", "stamper"),
-    ("/home/rishi/archival/miscyt", "@geuxto", "geuxto")
+    ("/home/rishi/archival/miscyt", "@geuxto", "geuxto"),
+    ("/home/rishi/archival/miscyt", "@JebusMatoi", "jebus"),
+    ("/home/rishi/archival/miscyt", "@OX_Media", "ox"),
+    ("/home/rishi/archival/miscyt", "@versandlukas", "versandlukas")
 ]
-template = subprocess.check_output(["which", "yt-dlp"]).decode("ascii").strip() + " --embed-thumbnail --embed-metadata --download-archive $PENISARCHIVE$.txt https://www.youtube.com/$PENISCHANNEL$ -o '%(channel)s/%(title)s.%(ext)s'"
+template = "/home/rishi/.local/bin/yt-dlp" + " --write-info-json --write-comments --embed-thumbnail --embed-metadata --download-archive $PENISARCHIVE$.txt https://www.youtube.com/$PENISCHANNEL$ -o '%(channel)s/%(title)s.%(ext)s'"
 
 for chan in channels:
     os.chdir(chan[0])
