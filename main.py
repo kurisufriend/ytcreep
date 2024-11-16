@@ -21,6 +21,9 @@ channels = [
     ("/home/rishi/archival/miscyt", "@puke.princess", "bassproshops"),
     ("/home/rishi/archival/miscyt", "@plushygirlie", "bassproshops2"),
     ("/home/rishi/archival/miscyt", "@l0de", "l0de"),
+    ("/home/rishi/archival/miscyt", "@atomicdff", "atomicdf"),
+    ("/home/rishi/archival/miscyt", "@stdcall", "stdcall"),
+    ("/home/rishi/archival/miscyt", "@gunkgirl", "gunkgirl"),
     ("/home/rishi/archival/miscyt", "@Nepeta-Leijon", "nepeta_from_yt_cmt")
 ]
 template = "/home/rishi/.local/bin/yt-dlp" + " --write-info-json --write-comments --embed-thumbnail --embed-metadata --download-archive $PENISARCHIVE$.txt https://www.youtube.com/$PENISCHANNEL$ -o '%(channel)s/%(title)s.%(ext)s'"
